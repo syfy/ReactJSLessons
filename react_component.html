@@ -16,7 +16,7 @@ js"></script>
   render: function() {
 
  return (
-      <p>Hello, componentized world!{this.props.greetTarget}</p>
+      <p>Hello, componentized world!{this.props.greetTarget} {this.props.children} </p>
     );
 
 
@@ -26,7 +26,9 @@ js"></script>
 });
 ReactDOM.render(	
 	<div>
-	<HelloWorlder greetTarget="Target 1"/>
+	<HelloWorlder greetTarget="Target 1">
+		Somethingzzzzzzz 
+	</HelloWorlder>
 		<HelloWorlder greetTarget="Target 2"/>
 			<HelloWorlder greetTarget = "Target 3 "/>
 	</div>,
